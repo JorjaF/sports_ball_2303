@@ -37,4 +37,10 @@ RSpec.describe Player do
 
     expect(player.total_cost).to eq(36000000)
   end
+
+  it "can have a nickname" do
+    player = Player.new("Michael Palledorous" , 1000000, 36, "Squints")
+    
+    ∫expect(player.set_nickname).to eq("Squints")
+  end
 end
